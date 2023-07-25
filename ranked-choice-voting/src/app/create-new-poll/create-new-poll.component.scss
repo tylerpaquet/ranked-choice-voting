@@ -1,0 +1,15 @@
+:host {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-option {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+    .close-icon {
+        cursor: pointer;
+    }
+}

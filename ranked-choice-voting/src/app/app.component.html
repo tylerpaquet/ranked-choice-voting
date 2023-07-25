@@ -1,0 +1,26 @@
+<mat-toolbar>
+  <div>CJDJ RCV</div>
+  <div class="links">
+    <a [routerLink]="['/home']">Home</a>
+    <a [routerLink]="['/new-poll']">Create Poll</a>
+    <a>Vote</a>
+    <a>View Results</a>
+  </div>
+  <button mat-icon-button class="nav-menu" (click)="toggleSideNav(sidenav)">
+    <mat-icon>menu</mat-icon>
+  </button>
+</mat-toolbar>
+
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav class="sidenav" #sidenav mode="over">
+    <div class="sidenav-links">
+      <a (click)="toggleSideNav(sidenav)" [routerLink]="['/home']">Home</a>
+      <a (click)="toggleSideNav(sidenav)" [routerLink]="['/new-poll']">Create Poll</a>
+      <a (click)="toggleSideNav(sidenav)">Vote</a>
+      <a (click)="toggleSideNav(sidenav)">View Results</a>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

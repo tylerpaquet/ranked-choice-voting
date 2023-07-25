@@ -1,0 +1,17 @@
+:host {
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+}
+
+a {
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
